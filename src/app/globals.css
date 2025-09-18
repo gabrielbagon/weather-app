@@ -1,20 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
 
+/* Mapeia a família padrão do Tailwind (font-sans) para a sua variável */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+               "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@theme inline {
+/* (opcional) ajude o navegador a usar a DM Sans onde não houver classe */
+:root { font-synthesis-weight: none; } /* tipografia mais fiel */
+
+
+:root {
+  --background: #02012C;
+  --foreground: #02012C;
+}
+
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-font: #4658D9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #02012C;
     --foreground: #ededed;
   }
 }
@@ -24,3 +35,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes cloud-move { 0% {transform: translateX(-30%)} 100% {transform: translateX(150%)} }
+@keyframes rain-fall { 0% {transform: translateY(-120%)} 100% {transform: translateY(120%)} }
+@keyframes snow-fall { 0% {transform: translateY(-120%) rotate(0)} 100% {transform: translateY(120%) rotate(360deg)} }
+@keyframes fog-drift { 0% {transform: translateX(-5%)} 100% {transform: translateX(5%)} }
+@keyframes sun-spin { to { transform: rotate(360deg) } }
+@keyframes star-twinkle { 0%,100% {opacity:.9} 50% {opacity:.3} }
+@keyframes lightning-flash { 0%,96%,100% {opacity:0} 97% {opacity:.9} 98% {opacity:.2} 99% {opacity:0} }
