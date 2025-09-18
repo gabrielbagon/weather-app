@@ -3,10 +3,6 @@
 Solution for the [Frontend Mentor – Weather app challenge](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49).  
 Built with **Next.js 15**, **React 19**, **Tailwind CSS v4**, and the **Open‑Meteo** APIs (no key required).
 
-<p align="center">
-  <img alt="Weather App preview" src="./.github/preview.png" width="800">
-</p>
-
 ---
 
 ## Live
@@ -147,25 +143,6 @@ export default function RootLayout({ children }) {
 2. Import the repo on [Vercel](https://vercel.com/import)
 3. Framework preset: **Next.js** — no env vars needed
 4. Deploy
-
----
-
-## Screenshots
-
-Put your captures under `.github/preview.png` (or update the path above).  
-You can add more:
-
-```
-.github/
-  preview.png
-  mobile.png
-  desktop.png
-```
-
-```md
-![Mobile](./.github/mobile.png)
-![Desktop](./.github/desktop.png)
-```
 
 ---
 
