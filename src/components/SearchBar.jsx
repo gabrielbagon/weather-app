@@ -6,7 +6,7 @@ export default function SearchBar({
   onSearch = (q) => console.log("Searching:", q),
   placeholder = "Buscar...",
   defaultValue = "",
-  buttonText = "Search",
+  buttonText = "Buscar",
   className = "",
 }) {
   const [query, setQuery] = useState(defaultValue);
