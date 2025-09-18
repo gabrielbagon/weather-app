@@ -1,4 +1,6 @@
-# Weather App — Frontend Mentor Challenge
+
+
+## Weather App — Frontend Mentor Challenge
 
 Solution for the [Frontend Mentor – Weather app challenge](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49).  
 Built with **Next.js 15**, **React 19**, **Tailwind CSS v4**, and the **Open‑Meteo** APIs (no key required).
@@ -7,9 +9,7 @@ Built with **Next.js 15**, **React 19**, **Tailwind CSS v4**, and the **Open‑M
 
 ## Live
 
-- **Live Site URL:** _add your deployed link here (e.g. Vercel)_
-- **Frontend Mentor solution page:** _add your solution link here_
-
+- **Live Site URL:** https://weather-app-gabriel-bagons-projects.vercel.app/weather
 ---
 
 ## Features
