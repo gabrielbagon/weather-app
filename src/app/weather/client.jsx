@@ -8,6 +8,8 @@ import SearchBar from "@/components/SearchBar";
 import GeoButton from "@/components/GeoButton";
 import WeatherDeck from "@/components/WeatherDeck";
 
+export const dynamic = 'force-dynamic'
+
 export default function ClientWeatherPage() {
   const router = useRouter();
   const sp = useSearchParams();
@@ -44,7 +46,7 @@ export default function ClientWeatherPage() {
     <>
    <header>
 				<Navbar />
-				<Title className="mx-auto" title={"How’s the sky looking today?"} />
+				<Title className="mx-auto" title={"Como está o céu hoje?"} />
       </header>
 			<main className="min-h-dvh px-4 py-8">
 				<div className="mx-auto max-w-5xl space-y-6">
